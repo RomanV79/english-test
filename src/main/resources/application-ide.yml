@@ -1,0 +1,17 @@
+app:
+  adminpass: pass
+  adminemail: admin@admin.ru
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/english?serverTimezone=UTC
+    username: admin
+    password: password
+
+logging:
+  level:
+    root: info
+
+server:
+  servlet:
+    context-path: /english-test

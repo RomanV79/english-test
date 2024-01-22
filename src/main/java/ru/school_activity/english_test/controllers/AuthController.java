@@ -26,7 +26,7 @@ public class AuthController {
         boolean isAuthenticated = !(authentication instanceof AnonymousAuthenticationToken);
         model.addAttribute("isAuthenticated", isAuthenticated);
 
-        return "/sign-in";
+        return "sign-in";
     }
 
 

@@ -46,7 +46,7 @@ public class RegistrationController {
             appUserService.save(signUpDto);
         } catch (UserExistException e) {
             model.addAttribute("warning", e.getMessage());
-            return "/sign-up";
+            return "sign-up";
         }
 
         return "redirect:/sign-in";

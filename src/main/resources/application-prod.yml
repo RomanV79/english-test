@@ -1,0 +1,16 @@
+app:
+  adminpass: ${ADMIN_PASS}
+  adminemail: ${ADMIN_EMAIL}
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://postgres:5432/english?serverTimezone=UTC
+    username: ${POSTGRES_USER}
+    password: ${POSTGRES_PASSWORD}
+
+server:
+  servlet:
+    context-path: /english-test

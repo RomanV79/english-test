@@ -2,8 +2,9 @@ services:
   postgres:
     image: 'postgres:16.0'
     environment:
-      - 'POSTGRES_DB=english'
-      - 'POSTGRES_PASSWORD=password'
-      - 'POSTGRES_USER=admin'
+      SPRING_PROFILES_ACTIVE: ide
+      POSTGRES_DB: english
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: admin
     ports:
       - '5432:5432'
